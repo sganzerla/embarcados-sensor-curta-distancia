@@ -22,9 +22,7 @@ void setup()
     pinMode(LED_AMARELO, OUTPUT);
     pinMode(LED_VERDE, OUTPUT);
     pinMode(LED_AZUL, OUTPUT);
-    pinMode(LED_VERMELHO, OUTPUT);
-
-    pinMode(0, OUTPUT);
+    pinMode(LED_VERMELHO, OUTPUT); 
     Serial.begin(9600);
 }
 
