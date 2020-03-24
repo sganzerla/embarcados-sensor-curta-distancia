@@ -1,9 +1,13 @@
+ 
+
 // pinos do sensor hc sr04
 // nodemcu só alimenta até 3.3v o sensor é de 5v
 // ou coloca-se um conversor de alimentação no circuito
 // ou alimenta-se o sensor com fonte externa.
 #define TRIGGER_PIN D1
 #define ECHO_PIN D2
+
+#define BUZZ_PIN D3
 
 // leds para indicar nível de aproximação
 // do mais próximo para o mais longe
@@ -12,17 +16,17 @@
 #define LED_BLUE_PIN D7
 #define LED_GREEN_PIN D8
 
-
 // marcos de distância para as cores
 // se precisar alterar as distâncias só alterar aqui
 
-#define DIST_RED_CM 6 
+#define DIST_RED_CM 6
 #define DIST_YELLOW_CM 12
 #define DIST_BLUE_CM 18
 #define DIST_GREEN_CM 24
 
-
 int distancia;
+int frequencia = 2000;
+int tempo = 500;
 
 void setup()
 {
@@ -42,49 +46,53 @@ void loop()
 
 void acendendoLeds(int dist)
 {
+  noTone(BUZZ_PIN);
   if (dist > 0 && dist <= DIST_RED_CM)
   {
     digitalWrite(LED_GREEN_PIN, HIGH);
     digitalWrite(LED_BLUE_PIN, HIGH);
     digitalWrite(LED_YELLOW_PIN, HIGH);
     digitalWrite(LED_RED_PIN, HIGH);
+
+    tone(BUZZ_PIN, frequencia, tempo);
+    delay(300);
+  }
+  else if (dist > DIST_RED_CM && dist <= DIST_YELLOW_CM)
+  {
+    digitalWrite(LED_GREEN_PIN, HIGH);
+    digitalWrite(LED_BLUE_PIN, HIGH);
+    digitalWrite(LED_YELLOW_PIN, HIGH);
+    digitalWrite(LED_RED_PIN, LOW);
+
+    tone(BUZZ_PIN, frequencia, tempo);
+    delay(700);
+  }
+  else if (dist > DIST_YELLOW_CM && dist <= DIST_BLUE_CM)
+  {
+    digitalWrite(LED_GREEN_PIN, HIGH);
+    digitalWrite(LED_BLUE_PIN, HIGH);
+    digitalWrite(LED_YELLOW_PIN, LOW);
+    digitalWrite(LED_RED_PIN, LOW);
+
+    tone(BUZZ_PIN, frequencia, tempo);
+    delay(1200);
+  }
+  else if (dist > DIST_BLUE_CM && dist <= DIST_GREEN_CM)
+  {
+    digitalWrite(LED_GREEN_PIN, HIGH);
+    digitalWrite(LED_BLUE_PIN, LOW);
+    digitalWrite(LED_YELLOW_PIN, LOW);
+    digitalWrite(LED_RED_PIN, LOW);
+
+    tone(BUZZ_PIN, frequencia, tempo);
+    delay(1500);
   }
   else
   {
-    if (dist > DIST_RED_CM && dist <=  DIST_YELLOW_CM)
-    {
-      digitalWrite(LED_GREEN_PIN, HIGH);
-      digitalWrite(LED_BLUE_PIN, HIGH);
-      digitalWrite(LED_YELLOW_PIN, HIGH);
-      digitalWrite(LED_RED_PIN, LOW);
-    }
-    else
-    {
-      if (dist > DIST_YELLOW_CM && dist <= DIST_BLUE_CM)
-      {
-        digitalWrite(LED_GREEN_PIN, HIGH);
-        digitalWrite(LED_BLUE_PIN, HIGH);
-        digitalWrite(LED_YELLOW_PIN, LOW);
-        digitalWrite(LED_RED_PIN, LOW);
-      }
-      else
-      {
-        if (dist > DIST_BLUE_CM && dist <= DIST_GREEN_CM)
-        {
-          digitalWrite(LED_GREEN_PIN, HIGH);
-          digitalWrite(LED_BLUE_PIN, LOW);
-          digitalWrite(LED_YELLOW_PIN, LOW);
-          digitalWrite(LED_RED_PIN, LOW);
-        }
-        else
-        {
-          digitalWrite(LED_GREEN_PIN, LOW);
-          digitalWrite(LED_BLUE_PIN, LOW);
-          digitalWrite(LED_YELLOW_PIN, LOW);
-          digitalWrite(LED_RED_PIN, LOW);
-        }
-      }
-    }
+    digitalWrite(LED_GREEN_PIN, LOW);
+    digitalWrite(LED_BLUE_PIN, LOW);
+    digitalWrite(LED_YELLOW_PIN, LOW);
+    digitalWrite(LED_RED_PIN, LOW);
   }
 }
 
@@ -93,6 +101,9 @@ void setandoPinos()
   pinMode(TRIGGER_PIN, OUTPUT);
   pinMode(ECHO_PIN, INPUT);
   digitalWrite(TRIGGER_PIN, LOW);
+
+  pinMode(BUZZ_PIN, OUTPUT);
+  noTone(BUZZ_PIN);
 
   pinMode(LED_BLUE_PIN, OUTPUT);
   pinMode(LED_GREEN_PIN, OUTPUT);
