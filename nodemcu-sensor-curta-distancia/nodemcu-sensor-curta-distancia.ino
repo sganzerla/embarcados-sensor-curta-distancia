@@ -29,7 +29,7 @@ void loop()
   distancia = (0.01723 * readUltrasonicDistance(TRIGGER_PIN, ECHO_PIN));
   Serial.println(distancia);
 
-  if (distancia > 0 && distancia <= 30)
+  if (distancia > 0 && distancia <= 6)
   {
     digitalWrite(LED_GREEN_PIN, HIGH);
     digitalWrite(LED_BLUE_PIN, HIGH);
@@ -38,7 +38,7 @@ void loop()
   }
   else
   {
-    if (distancia > 31 && distancia <= 100)
+    if (distancia > 6 && distancia <= 12)
     {
       digitalWrite(LED_GREEN_PIN, HIGH);
       digitalWrite(LED_BLUE_PIN, HIGH);
@@ -47,7 +47,7 @@ void loop()
     }
     else
     {
-      if (distancia > 101 && distancia <= 160)
+      if (distancia > 12 && distancia <= 18)
       {
         digitalWrite(LED_GREEN_PIN, HIGH);
         digitalWrite(LED_BLUE_PIN, HIGH);
@@ -56,7 +56,7 @@ void loop()
       }
       else
       {
-        if (distancia > 161 && distancia <= 210)
+        if (distancia > 18 && distancia <= 24)
         {
           digitalWrite(LED_GREEN_PIN, HIGH);
           digitalWrite(LED_BLUE_PIN, LOW);
