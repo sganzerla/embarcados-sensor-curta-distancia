@@ -106,9 +106,10 @@ Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor 
 > [Manual do mundo](https://www.youtube.com/watch?v=vEdYjAbzrAE&list=PLYjrJH3e_wDPwKigz0AcIgzk9BF4lqDuy)
  
 ###  Aplicações
-<p> Luz com autoacendimento em jardins ou áreas externas. </p>
-<p> Contador de pessoas que passam por algum lugar sem utilizar catracas (ao passarem fazem sombra e incrementam um contador) 
-</p>
+<p> Sensor de estacionamento </p>
+<p> Abertura de porta ou acendimento de luzes automaticamente</p>
+<p> Detectar presença ou aproximação de pessoas.</p>
+
 
 
   
