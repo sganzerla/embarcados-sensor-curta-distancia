@@ -61,28 +61,5 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
   
 
 
-### Links úteis
-
-- [Manual do mundo](https://www.youtube.com/watch?v=vEdYjAbzrAE&list=PLYjrJH3e_wDPwKigz0AcIgzk9BF4lqDuy)
-
-- [IDE Arduino](https://www.arduino.cc/en/Main/Software)
- 
-- [Documentação sintaxe C++](https://www.arduino.cc/reference/en/)
-
-- [Fritzing](https://fritzing.org/home/) - Licença comercial
-
-- [Fritzing](https://softfamous.com/fritzing/download/) - Versão gratuita (antiga mas permite que seja atualizada)
- 
-###  Aplicações
- 
- - Sensor de estacionamento 
- 
- - Abertura de porta ou acendimento de luzes automaticamente
-
- - Detectar presença ou aproximação de pessoas
-
- - Robótica detectar colisões e desviar de obstáculos
-
-
 
   
