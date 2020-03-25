@@ -18,7 +18,7 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 ```
 - a) 1 Arduino Uno 
 - b) 1 Sensor ultrassônico HC-SR04 
-- c) 1 Buzzer 
+- c) 1 Buzzer DR-08H
 - d) 1 Protoboard
 - e) 4 LEDs comum de 4mm   
 - f) 4 Resistores de 300Ω 
@@ -35,9 +35,9 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png">
   <img src="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png" alt="reset" style="max-width:100%;"></a></p> 
 
- ### c) Buzzer  
-  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499290-78a84280-6e30-11ea-96d9-bb67d2146b85.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77499290-78a84280-6e30-11ea-96d9-bb67d2146b85.png" alt="reset" style="max-width:100%;"></a></p> 
+ ### c) Buzzer DR-08H
+  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77565026-62d36580-6ea2-11ea-9a5e-389752b9158f.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77565026-62d36580-6ea2-11ea-9a5e-389752b9158f.png" alt="reset" style="max-width:100%;"></a></p> 
  
   ### d) Protoboard 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png">
