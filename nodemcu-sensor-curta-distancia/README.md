@@ -27,8 +27,9 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 - f) 1 Sensor ultrassônico HC-SR04 
 ```
 
- ### a) Placa Nodemcu v1
- Porta de 5V e 40mA
+ ### a) Placa Nodemcu v1 
+ Possui pinos de alimentação somente de 3.3v
+ 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png">
   <img src="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png" alt="reset" style="max-width:100%;"></a></p> 
 
@@ -70,10 +71,14 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 - [Fritzing](https://softfamous.com/fritzing/download/) - Versão gratuita (antiga mas permite que seja atualizada)
  
 ###  Aplicações
-<p> Sensor de estacionamento </p>
-<p> Abertura de porta ou acendimento de luzes automaticamente</p>
-<p> Detectar presença ou aproximação de pessoas</p>
-<p> Robótica detectar colisões e desviar de obstáculos </p>
+ 
+ - Sensor de estacionamento 
+ 
+ - Abertura de porta ou acendimento de luzes automaticamente
+
+ - Detectar presença ou aproximação de pessoas
+
+ - Robótica detectar colisões e desviar de obstáculos
 
 
 
