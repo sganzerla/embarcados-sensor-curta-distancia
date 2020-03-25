@@ -14,6 +14,21 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
   <img src="https://user-images.githubusercontent.com/22710963/77565555-25bba300-6ea3-11ea-938f-b5b198a35ab3.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
+
+### Configuracao
+
+No exemplo a escala utilizada é de 6 em 6cm, para aumentar basta alterar os valores definidos aqui:
+
+```
+#define DIST_RED_CM 6
+#define DIST_YELLOW_CM 12
+#define DIST_BLUE_CM 18
+#define DIST_GREEN_CM 24
+
+```
+
+
+
 ## Hardware necessário
 ```
 - a) 1 Arduino Uno 
