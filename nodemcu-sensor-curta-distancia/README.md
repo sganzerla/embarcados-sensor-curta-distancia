@@ -3,7 +3,7 @@
 
 # arduino-sensor-curta-distancia
 
-Circuito simples que apura uma curta distância utilizando sensor ultrassônico HC-SR04 e indica a aproximação de um objeto com acendimento de Leds coloridos em 5 níveis.
+Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra alterar os valores para 3m mais ou menos) utilizando sensor ultrassônico HC-SR04 numa placa Nodemcu com leds indicativos e buzzer.
 
 ### Aferir distância de objetos indicando aproximação com leds coloridos(simulação) (vídeo)
 <p>
@@ -11,26 +11,15 @@ Circuito simples que apura uma curta distância utilizando sensor ultrassônico 
   <img src="https://user-images.githubusercontent.com/22710963/77497528-485ea500-6e2c-11ea-86ff-b34c922d3c04.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
-
-##### Ambiente Virtual de Hardware e Software [TinkerCad](https://www.tinkercad.com)  
-- É possível simular tanto componentes de hardware quanto a lógica de programação envolvida no circuito. Bastante útil porque dispensa a compra dos componentes eletrônicos físicos e a instalação da IDE no computador pra testes.
-
-### Software necessário
-
-- [IDE Arduino](https://www.arduino.cc/en/Main/Software)
-- [Documentação sintaxe C++](https://www.arduino.cc/reference/en/)
-
-### Software p/ gerar esquemas de circuitos elétricos 
-
-- Útil para documentar projetos
-
-- Versão paga [Fritzing](https://fritzing.org/home/)
-
-- Versão gratuita (permite que seja atualizada) [Fritzing](https://softfamous.com/fritzing/download/)
+### Circuito
+<p>
+ <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77496978-fb2e0380-6e2a-11ea-99c5-576f4100f042.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77496978-fb2e0380-6e2a-11ea-99c5-576f4100f042.png" alt="reset" style="max-width:100%;"></a>
+</p> 
 
 ## Hardware necessário
 ```
-- a) 1 Placa Arduino com cabo USB
+- a) 1 Nodemcu 
 - b) 5 Resistores de 300Ω 
 - c) 5 LEDs comum de 4mm 
 - d) 1 Protoboard
@@ -38,10 +27,10 @@ Circuito simples que apura uma curta distância utilizando sensor ultrassônico 
 - f) 1 Sensor ultrassônico HC-SR04 
 ```
 
- ### a) Placa Arduino com cabo USB
+ ### a) Placa Nodemcu v1
  Porta de 5V e 40mA
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710418-aac7de80-46e2-11ea-82d4-fabab3361d1f.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73710418-aac7de80-46e2-11ea-82d4-fabab3361d1f.png" alt="reset" style="max-width:100%;"></a></p> 
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png" alt="reset" style="max-width:100%;"></a></p> 
 
  ### b) Resistores  
  Servem para diminuir a tensão.
@@ -68,50 +57,23 @@ Circuito simples que apura uma curta distância utilizando sensor ultrassônico 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png">
   <img src="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png" alt="reset" style="max-width:100%;"></a></p> 
 
-
-## Instalação dos Leds
-Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor de 220 ou 330 Ohm entre a ligação com o GND (negativo)
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73712954-7ce69800-46ea-11ea-980e-bec2802b2c12.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73712954-7ce69800-46ea-11ea-980e-bec2802b2c12.png" alt="reset" style="max-width:100%;"></a></p> 
-  
-  ## Fórmula Lei de Ohm
-  V = R * I
-  
- > O "I" significa a intensidade da corrente elétrica, no entanto, muitas vezes se fala apenas da corrente elétrica (sem a palavra intensidade). Quando existe uma diferença de potencial elétrico entre componentes (polarizado) acontece um fluxo de partículas que equilibra o campo elétrico. Esse fluxo é a corrente elétrica.
- 
-> A corrente elétrica é medida em Ampere (A) que nada mais é do que a quantidade de elétrons que passa nesse fio em um tempo determinado!
-
-> A tensão elétrica (V) é medida em Volts (V) (em homenagem ao físico Alessandro Volta).
-
-> A resistência (R) é medida em Ohm (Ω) e a intensidade da corrente elétrica (I) em Ampere (A).
-
-> A relação entre tensão, resistência e intensidade da corrente define a Lei de Ohm: V = R * I
-
-> Para calcular a corrente: I = V / R
-
-> Para calcular a resistência: R = V / I
-
-> Para calcular a tensão: V = R * I
-
-### Tabela de Cores dos resistores na convenção internacional
-<p>
- <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73806830-5cc9de00-47a9-11ea-887a-f13d09948aea.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73806830-5cc9de00-47a9-11ea-887a-f13d09948aea.png" alt="reset" style="max-width:100%;"></a>
-</p> 
-
-### Circuito
-<p>
- <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77496978-fb2e0380-6e2a-11ea-99c5-576f4100f042.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77496978-fb2e0380-6e2a-11ea-99c5-576f4100f042.png" alt="reset" style="max-width:100%;"></a>
-</p> 
-
 ### Links úteis
-> [Manual do mundo](https://www.youtube.com/watch?v=vEdYjAbzrAE&list=PLYjrJH3e_wDPwKigz0AcIgzk9BF4lqDuy)
+
+- [Manual do mundo](https://www.youtube.com/watch?v=vEdYjAbzrAE&list=PLYjrJH3e_wDPwKigz0AcIgzk9BF4lqDuy)
+
+- [IDE Arduino](https://www.arduino.cc/en/Main/Software)
+ 
+- [Documentação sintaxe C++](https://www.arduino.cc/reference/en/)
+
+- [Fritzing](https://fritzing.org/home/) - Licença comercial
+
+- [Fritzing](https://softfamous.com/fritzing/download/) - Versão gratuita (antiga mas permite que seja atualizada)
  
 ###  Aplicações
 <p> Sensor de estacionamento </p>
 <p> Abertura de porta ou acendimento de luzes automaticamente</p>
-<p> Detectar presença ou aproximação de pessoas.</p>
+<p> Detectar presença ou aproximação de pessoas</p>
+<p> Robótica detectar colisões e desviar de obstáculos </p>
 
 
 
