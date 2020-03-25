@@ -5,7 +5,7 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 ### Aferir distância de objetos indicando aproximação com leds coloridos(simulação) (vídeo)
 <p>
  <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/MlXRVoiU_mQ" >
-  <img src="https://user-images.githubusercontent.com/22710963/77497528-485ea500-6e2c-11ea-86ff-b34c922d3c04.png" alt="reset" style="max-width:100%;"></a>
+  <img src="https://user-images.githubusercontent.com/22710963/77564354-5ac6f600-6ea1-11ea-96ce-825801d75bb0.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
 ### Circuito
