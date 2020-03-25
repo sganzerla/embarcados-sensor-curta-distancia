@@ -10,8 +10,8 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 
 ### Circuito
 <p>
- <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77551265-e1270c00-6e90-11ea-8e99-9f86181937de.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77551265-e1270c00-6e90-11ea-8e99-9f86181937de.png" alt="reset" style="max-width:100%;"></a>
+ <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77565555-25bba300-6ea3-11ea-938f-b5b198a35ab3.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77565555-25bba300-6ea3-11ea-938f-b5b198a35ab3.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
 ## Hardware necessário
