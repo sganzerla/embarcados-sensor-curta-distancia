@@ -31,35 +31,28 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
  ### a) Placa Nodemcu v1 
  Possui pinos de alimentação somente de 3.3v
  
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png" alt="reset" style="max-width:100%;"></a></p> 
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499726-a0e47100-6e31-11ea-9768-2aabb681259e.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77499726-a0e47100-6e31-11ea-9768-2aabb681259e.png" alt="reset" style="max-width:100%;"></a></p> 
 
   ### b) Sensor ultrassônico HC-SR04 
   Emite som e verifica o eco do retorno, assim faz a aferição da distância.
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png">
   <img src="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png" alt="reset" style="max-width:100%;"></a></p> 
 
-
- ### c) Buzzer   
-  
+ ### c) Buzzer  
   <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499290-78a84280-6e30-11ea-96d9-bb67d2146b85.png">
   <img src="https://user-images.githubusercontent.com/22710963/77499290-78a84280-6e30-11ea-96d9-bb67d2146b85.png" alt="reset" style="max-width:100%;"></a></p> 
-   
  
   ### d) Protoboard 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png">
   <img src="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png" alt="reset" style="max-width:100%;"></a></p> 
 
  ### e) LEDS comuns de 4mm
-  Diodo com 2V e 15mA, perna maior ligada no positivo
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499523-14d24980-6e31-11ea-9ee1-2f44635a20be.png">
   <img src="https://user-images.githubusercontent.com/22710963/77499523-14d24980-6e31-11ea-9ee1-2f44635a20be.png" alt="reset" style="max-width:100%;"></a></p> 
 
  ### f) Resistores  
- Servem para diminuir a tensão.
- 
- <p>O de 300Ω instalado entre o negativo do LED e a conexão com GND do Arduino.</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png">
+ <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png">
   <img src="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png" alt="reset" style="max-width:100%;"></a></p> 
 
   ### g) Cabos de conexão
