@@ -4,8 +4,8 @@ Circuito simples que apura uma curta distância utilizando sensor ultrassônico 
 
 ### Aferir distância de objetos indicando aproximação com leds coloridos(simulação) (vídeo)
 <p>
- <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/kk56dAbhrLw" >
-  <img src="https://user-images.githubusercontent.com/22710963/76180418-a046ac00-619c-11ea-9605-251b99427352.png" alt="reset" style="max-width:100%;"></a>
+ <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/MlXRVoiU_mQ" >
+  <img src="https://user-images.githubusercontent.com/22710963/77547744-5b08c680-6e8c-11ea-80f6-68b1b3faa44f.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
 
