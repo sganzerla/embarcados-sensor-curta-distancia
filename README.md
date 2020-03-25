@@ -1,4 +1,4 @@
-# arduino-sensor-curta-distancia
+# embarcados-sensor-curta-distancia
 
 Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra alterar os valores para 3m mais ou menos) utilizando sensor ultrassônico HC-SR04 com leds indicativos e buzzer utilizando Arduino Uno e outro com Nodemcu.
 
