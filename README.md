@@ -20,6 +20,10 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 - [Fritzing](https://fritzing.org/home/) - Licença comercial
 
 - [Fritzing](https://softfamous.com/fritzing/download/) - Versão gratuita (antiga mas permite que seja atualizada)
+
+- [TinkerCad](https://www.tinkercad.com) - Ambiente Virtual p/ prototipagem
+
+- [Calculadora de Resistência](http://resistor.cherryjourney.pt/) - Calculadora de Resistência 
  
 ###  Aplicações
  
