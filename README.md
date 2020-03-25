@@ -4,9 +4,9 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 
  ### Exemplo 
  
- - [com Arduino Uno](https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/arduino-sensor-curta-distancia)
+ - [Circuito com Arduino Uno](https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/arduino-sensor-curta-distancia)
  
- - [com Nodemcu](https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/nodemcu-sensor-curta-distancia)
+ - [Circuito com Nodemcu](https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/nodemcu-sensor-curta-distancia)
 
 
 ### Links úteis
