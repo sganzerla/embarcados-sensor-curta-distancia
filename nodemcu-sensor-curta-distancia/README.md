@@ -42,8 +42,8 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 
  ### c) Buzzer   
   
-  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499065-d8eab480-6e2f-11ea-83a6-7472cbbb9e73.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77499065-d8eab480-6e2f-11ea-83a6-7472cbbb9e73.png" alt="reset" style="max-width:100%;"></a></p> 
+  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499290-78a84280-6e30-11ea-96d9-bb67d2146b85.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77499290-78a84280-6e30-11ea-96d9-bb67d2146b85.png" alt="reset" style="max-width:100%;"></a></p> 
    
  
   ### d) Protoboard 
