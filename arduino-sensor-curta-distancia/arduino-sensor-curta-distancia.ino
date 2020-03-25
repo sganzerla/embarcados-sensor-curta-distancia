@@ -1,4 +1,4 @@
-9600
+
 #define ECHO_PIN 2
 #define TRIGGER_PIN 3
 
@@ -19,7 +19,7 @@
 #define DIST_BLUE_CM 18
 #define DIST_GREEN_CM 24
 
-    int distancia;
+int distancia;
 int frequencia = 2000;
 int tempo = 500;
 
@@ -34,7 +34,7 @@ void setup()
 void loop()
 {
 
-    distancia = (0.01723 * readUltrasonicDistance(TRIGGER_PIN, ECHO_PIN));
+    distancia = (0.01723 * readUltrasonicDistance());
     Serial.println(distancia);
     acendendoLeds(distancia);
 }
@@ -106,7 +106,7 @@ void setandoPinos()
     pinMode(LED_YELLOW_PIN, OUTPUT);
 }
 
-long readUltrasonicDistance(int TRIGGER_PIN, int ECHO_PIN)
+long readUltrasonicDistance()
 {
     pinMode(TRIGGER_PIN, OUTPUT); // Clear the trigger
     digitalWrite(TRIGGER_PIN, LOW);
