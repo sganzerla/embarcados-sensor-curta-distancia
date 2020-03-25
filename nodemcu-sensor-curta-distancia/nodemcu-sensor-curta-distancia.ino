@@ -1,13 +1,13 @@
- 
+
 
 // pinos do sensor hc sr04
 // nodemcu só alimenta até 3.3v o sensor é de 5v
 // ou coloca-se um conversor de alimentação no circuito
 // ou alimenta-se o sensor com fonte externa.
-#define TRIGGER_PIN D1
-#define ECHO_PIN D2
+#define TRIGGER_PIN D2
+#define ECHO_PIN D3
 
-#define BUZZ_PIN D3
+#define BUZZ_PIN D4
 
 // leds para indicar nível de aproximação
 // do mais próximo para o mais longe
