@@ -1,6 +1,6 @@
 # arduino-sensor-curta-distancia
 
-Circuito simples que apura uma curta distância utilizando sensor ultrassônico HC-SR04 e indica a aproximação de um objeto com acendimento de Leds coloridos em 5 níveis.
+Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra alterar os valores para 3m mais ou menos) utilizando sensor ultrassônico HC-SR04 com leds indicativos e buzzer utilizando Arduino Uno e outro com Nodemcu.
 
 ### Aferir distância de objetos indicando aproximação com leds coloridos(simulação) (vídeo)
 <p>
