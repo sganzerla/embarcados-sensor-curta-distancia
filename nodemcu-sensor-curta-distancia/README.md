@@ -33,7 +33,7 @@ No exemplo a escala utilizada é de 6 em 6cm, para aumentar basta alterar os val
 ```
 - a) 1 Nodemcu 
 - b) 1 Sensor ultrassônico HC-SR04 
-- c) 1 Buzzer 
+- c) 1 Buzzer DR-08H
 - d) 1 Protoboard
 - e) 4 LEDs comum de 4mm   
 - f) 4 Resistores de 300Ω 
