@@ -30,7 +30,7 @@ No exemplo a escala utilizada é de 6 em 6cm, para aumentar basta alterar os val
 
 
 ## Hardware necessário
- 
+ ```
 - a) 1 Arduino Uno 
 
 - b) 1 Sensor ultrassônico HC-SR04 
@@ -44,7 +44,7 @@ No exemplo a escala utilizada é de 6 em 6cm, para aumentar basta alterar os val
 - f) 4 Resistores de 300Ω 
 
 - g) 16-20 Cabos de conexão
-
+```
 
  ### a) Placa Arduino Uno 
  
