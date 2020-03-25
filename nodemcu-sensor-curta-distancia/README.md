@@ -20,11 +20,12 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 ## Hardware necessário
 ```
 - a) 1 Nodemcu 
-- b) 5 Resistores de 300Ω 
-- c) 5 LEDs comum de 4mm 
+- b) 1 Sensor ultrassônico HC-SR04 
+- c) 1 Buzzer 
 - d) 1 Protoboard
-- e) 16-20 Cabos de conexão 
-- f) 1 Sensor ultrassônico HC-SR04 
+- e) 4 LEDs comum de 4mm   
+- f) 4 Resistores de 300Ω 
+- g) 16-20 Cabos de conexão
 ```
 
  ### a) Placa Nodemcu v1 
@@ -33,30 +34,39 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png">
   <img src="https://user-images.githubusercontent.com/22710963/77498122-ad66ca80-6e2d-11ea-9e7e-d297029221c1.png" alt="reset" style="max-width:100%;"></a></p> 
 
- ### b) Resistores  
- Servem para diminuir a tensão.
- 
- <p>O de 300Ω instalado entre o negativo do LED e a conexão com GND do Arduino.</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png" alt="reset" style="max-width:100%;"></a></p> 
+  ### b) Sensor ultrassônico HC-SR04 
+  Emite som e verifica o eco do retorno, assim faz a aferição da distância.
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png" alt="reset" style="max-width:100%;"></a></p> 
+
+
+ ### c) Buzzer   
+  
+  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499065-d8eab480-6e2f-11ea-83a6-7472cbbb9e73.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77499065-d8eab480-6e2f-11ea-83a6-7472cbbb9e73.png" alt="reset" style="max-width:100%;"></a></p> 
    
-  ### c) LEDS comuns de 4mm
-  Diodo com 2V e 15mA, perna maior ligada no positivo
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710278-4a38a180-46e2-11ea-960c-8c0c3ff97b9c.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73710278-4a38a180-46e2-11ea-960c-8c0c3ff97b9c.png" alt="reset" style="max-width:100%;"></a></p> 
  
   ### d) Protoboard 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710865-e7e0a080-46e3-11ea-9ec4-4800b2b345b9.png">
   <img src="https://user-images.githubusercontent.com/22710963/73710865-e7e0a080-46e3-11ea-9ec4-4800b2b345b9.png" alt="reset" style="max-width:100%;"></a></p> 
 
-  ### e) Cabos de conexão
+ ### e) LEDS comuns de 4mm
+  Diodo com 2V e 15mA, perna maior ligada no positivo
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710278-4a38a180-46e2-11ea-960c-8c0c3ff97b9c.png">
+  <img src="https://user-images.githubusercontent.com/22710963/73710278-4a38a180-46e2-11ea-960c-8c0c3ff97b9c.png" alt="reset" style="max-width:100%;"></a></p> 
+
+ ### f) Resistores  
+ Servem para diminuir a tensão.
+ 
+ <p>O de 300Ω instalado entre o negativo do LED e a conexão com GND do Arduino.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png" alt="reset" style="max-width:100%;"></a></p> 
+
+  ### g) Cabos de conexão
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73711525-e57f4600-46e5-11ea-8cb9-e9bb27543ea4.png">
   <img src="https://user-images.githubusercontent.com/22710963/73711525-e57f4600-46e5-11ea-8cb9-e9bb27543ea4.png" alt="reset" style="max-width:100%;"></a></p>     
   
-  ### f) Sensor ultrassônico HC-SR04 
-  Emite som e verifica o eco do retorno, assim faz a aferição da distância.
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76180933-37603380-619e-11ea-9ff6-56c12c26a39b.png" alt="reset" style="max-width:100%;"></a></p> 
+
 
 ### Links úteis
 
