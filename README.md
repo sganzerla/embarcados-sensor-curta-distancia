@@ -4,7 +4,7 @@ Circuito simples que apura uma curta distância (30cm nesse exemplo mas dá pra 
 
  ### Circuito 
  
- - Arduino Uno[clique aqui](https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/arduino-sensor-curta-distancia)
+ - Arduino Uno [clique aqui](https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/arduino-sensor-curta-distancia)
  <p>
  <a target="_blank" rel="noopener noreferrer" href="https://github.com/sganzerla/arduino-sensor-curta-distancia/tree/master/arduino-sensor-curta-distancia" >
   <img src="https://user-images.githubusercontent.com/22710963/77564354-5ac6f600-6ea1-11ea-96ce-825801d75bb0.png" alt="reset" style="max-width:100%"></a>
