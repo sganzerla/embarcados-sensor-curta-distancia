@@ -23,6 +23,8 @@ int distancia;
 int frequencia = 2000;
 int tempo = 500;
 
+uint32_t timer = 0;
+
 void setup()
 {
 
@@ -34,7 +36,7 @@ void setup()
 void loop()
 {
 
-    distancia = (0.01723 * readUltrasonicDistance());
+    distancia = (0.01723 * readUltrasonicDistance(TRIGGER_PIN, ECHO_PIN));
     Serial.println(distancia);
     acendendoLeds(distancia);
 }
@@ -49,8 +51,7 @@ void acendendoLeds(int dist)
         digitalWrite(LED_YELLOW_PIN, HIGH);
         digitalWrite(LED_RED_PIN, HIGH);
 
-        tone(BUZZ_PIN, frequencia, tempo);
-        delay(300);
+        tocandoSomAlerta(300);
     }
     else if (dist > DIST_RED_CM && dist <= DIST_YELLOW_CM)
     {
@@ -59,8 +60,7 @@ void acendendoLeds(int dist)
         digitalWrite(LED_YELLOW_PIN, HIGH);
         digitalWrite(LED_RED_PIN, LOW);
 
-        tone(BUZZ_PIN, frequencia, tempo);
-        delay(700);
+        tocandoSomAlerta(700);
     }
     else if (dist > DIST_YELLOW_CM && dist <= DIST_BLUE_CM)
     {
@@ -69,8 +69,7 @@ void acendendoLeds(int dist)
         digitalWrite(LED_YELLOW_PIN, LOW);
         digitalWrite(LED_RED_PIN, LOW);
 
-        tone(BUZZ_PIN, frequencia, tempo);
-        delay(1200);
+        tocandoSomAlerta(1100);
     }
     else if (dist > DIST_BLUE_CM && dist <= DIST_GREEN_CM)
     {
@@ -79,8 +78,7 @@ void acendendoLeds(int dist)
         digitalWrite(LED_YELLOW_PIN, LOW);
         digitalWrite(LED_RED_PIN, LOW);
 
-        tone(BUZZ_PIN, frequencia, tempo);
-        delay(1500);
+        tocandoSomAlerta(1500);
     }
     else
     {
@@ -88,6 +86,16 @@ void acendendoLeds(int dist)
         digitalWrite(LED_BLUE_PIN, LOW);
         digitalWrite(LED_YELLOW_PIN, LOW);
         digitalWrite(LED_RED_PIN, LOW);
+    }
+}
+
+void tocandoSomAlerta(int intervMiliseg)
+{
+    if (millis() - timer >= intervMiliseg)
+    {
+        tone(BUZZ_PIN, frequencia, tempo);
+        timer = millis();
+        delay(intervMiliseg);
     }
 }
 
@@ -106,16 +114,16 @@ void setandoPinos()
     pinMode(LED_YELLOW_PIN, OUTPUT);
 }
 
-long readUltrasonicDistance()
+long readUltrasonicDistance(int trigger, int echo)
 {
-    pinMode(TRIGGER_PIN, OUTPUT); // Clear the trigger
-    digitalWrite(TRIGGER_PIN, LOW);
+    pinMode(trigger, OUTPUT); // Clear the trigger
+    digitalWrite(trigger, LOW);
     delayMicroseconds(2);
     // Sets the trigger pin to HIGH state for 10 microseconds
-    digitalWrite(TRIGGER_PIN, HIGH);
+    digitalWrite(trigger, HIGH);
     delayMicroseconds(10);
-    digitalWrite(TRIGGER_PIN, LOW);
-    pinMode(ECHO_PIN, INPUT);
+    digitalWrite(trigger, LOW);
+    pinMode(echo, INPUT);
     // Reads the echo pin, and returns the sound wave travel time in microseconds
-    return pulseIn(ECHO_PIN, HIGH);
+    return pulseIn(echo, HIGH);
 }
